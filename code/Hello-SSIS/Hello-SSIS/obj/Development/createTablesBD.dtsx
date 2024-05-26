@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/22/2024 10:39:36 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SRDAVID"
+  DTS:CreatorName="SRDAVID\David"
+  DTS:DTSID="{248761CB-D77B-4ACC-9600-32C0C625268F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="19466"
+  DTS:ObjectName="createTablesBD"
+  DTS:PackageType="5"
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{3209B677-983D-4A62-A1AE-8427FCC6BC65}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.SSISIntro]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{590F748A-25D6-4D6F-BF41-B551C48A3D8A}"
+      DTS:ObjectName="LocalHost.SSISIntro">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=SSISIntro;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{590F748A-25D6-4D6F-BF41-B551C48A3D8A}LocalHost.SSISIntro;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.TecnoNic]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9DD37152-3AB7-44B0-8DC3-971E376ACE04}"
+      DTS:ObjectName="LocalHost.TecnoNic">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=TecnoNic;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{9DD37152-3AB7-44B0-8DC3-971E376ACE04}LocalHost.TecnoNic;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.TecnoNicBD]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1B4350DC-6499-40B4-BE62-73EAF3830DFB}"
+      DTS:ObjectName="LocalHost.TecnoNicBD">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=TecnoNicBD;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{1B4350DC-6499-40B4-BE62-73EAF3830DFB}LocalHost.TecnoNicBD;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{97FFF7CF-B4FF-4691-A9FF-22DBEBE54395}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1B4350DC-6499-40B4-BE62-73EAF3830DFB}"
+          SQLTask:SqlStatementSource="CREATE TABLE DimensionPedido (&#xA;&#x9;Pedidold int PRIMARY KEY IDENTITY(1,1), &#xA;&#x9;NombreMetodoPago NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;DireccionPago NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;PrecioUnitario DECIMAL(10, 2) NOT NULL,&#xA;&#x9;Cantidad INT NOT NULL,&#xA;&#x9;NombreEstado NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;Fechalnicio DATETIME DEFAULT GETDATE(),&#xA;&#x9;FechaFin DATETIME DEFAULT GETDATE()&#xA;);&#xA;&#xA;CREATE TABLE DimensionUbicacion (&#xA;&#x9;UbicacionId INT IDENTITY (1,1) PRIMARY KEY,&#xA;&#x9;DireccionEnvio NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;EstadoEnvio NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;PaisEnvio NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;CiudadEnvio NVARCHAR(100) DEFAULT 'Unknown'&#xA;);&#xA;&#xA;CREATE TABLE DimensionTiempo (&#xA;&#x9;DateId INT IDENTITY (1,1) PRIMARY KEY,&#xA;&#x9;FechaEnvio DATETIME DEFAULT GETDATE(),&#xA;&#x9;FechaEntrega DATETIME DEFAULT GETDATE(),&#xA;&#x9;FechaPedido DATETIME DEFAULT GETDATE(),&#xA;&#x9;FechaInicio DATETIME DEFAULT GETDATE(),&#xA;&#x9;FechaFin DATETIME DEFAULT GETDATE()&#xA;);&#xA;&#x9;&#xA;CREATE TABLE DimensionCliente (&#xA;&#x9;Clienteld int PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;Nombre NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;Apellido NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;Email NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;Telefono INT NOT NULL,&#xA;&#x9;Direccion NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;Ciudad NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;Pais NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;Estado NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;CodigoPostal INT NOT NULL,&#xA;&#x9;PuntosFidelidad INT NOT NULL,&#xA;&#x9;Fechalnicio DATETIME DEFAULT GETDATE(),&#xA;&#x9;FechaFin DATETIME DEFAULT GETDATE()&#xA;);&#xA;&#xA;CREATE TABLE DimensionOfertas (&#xA;&#x9;Ofertasid int PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;Nombre NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;Descripcion NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;Descuento DECIMAL(10, 2) NOT NULL,&#xA;&#x9;CodDescuento INT NOT NULL,&#xA;&#x9;FechaLanzamiento DATETIME DEFAULT GETDATE(),&#xA;&#x9;FechaCaducidad DATETIME DEFAULT GETDATE(),&#xA;&#x9;Fechalnicio DATETIME DEFAULT GETDATE(),&#xA;&#x9;FechaFin DATETIME DEFAULT GETDATE()&#xA;);&#xA;&#xA;CREATE TABLE DimensionAreaEnvio (&#xA;&#x9;AreaEnviold int PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;NombreArea NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;CostoEnvio DECIMAL(10, 2) NOT NULL,&#xA;&#x9;Fechalnicio DATETIME DEFAULT GETDATE(),&#xA;&#x9;FechaFin DATETIME DEFAULT GETDATE()&#xA;);&#xA;&#xA;CREATE TABLE DimensionProducto (&#xA;&#x9;Productold int PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;Nombre NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;FechaAgregado DATETIME DEFAULT GETDATE(),&#xA;&#x9;Dimensiones NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;Peso DECIMAL(10, 2) NOT NULL,&#xA;&#x9;Nombrecategoria NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;NombreMarca NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;Fechalnicio DATETIME DEFAULT GETDATE(),&#xA;&#x9;FechaFin DATETIME DEFAULT GETDATE()&#xA;);&#xA;&#xA;CREATE TABLE FactTableEnvio (&#xA;&#x9;EnviosID int PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;Pedidold int NOT NULL,&#xA;&#x9;OfertasId int NOT NULL,&#xA;&#x9;AreaEnviold int NOT NULL,&#xA;&#x9;Clienteld int NOT NULL,&#xA;&#x9;Productold int NOT NULL,&#xA;&#x9;DATAKEY INT NOT NULL,&#xA;&#x9;Ubicacionld INT NOT NULL,&#xA;&#x9;EmpresaEnvio NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;MetodoEnvio NVARCHAR(100) DEFAULT 'Unknown',&#xA;&#x9;ValidFrom DATETIME DEFAULT GETDATE(),&#xA;&#x9;ValidTo DATETIME DEFAULT GETDATE(),&#xA;&#x9;FOREIGN KEY (Pedidold) REFERENCES DimensionPedido(Pedidold),&#xA;&#x9;FOREIGN KEY (OfertasId) REFERENCES DimensionOfertas(Ofertasid),&#xA;&#x9;FOREIGN KEY (AreaEnviold) REFERENCES DimensionAreaEnvio(AreaEnviold),&#xA;&#x9;FOREIGN KEY (Ubicacionld) REFERENCES DimensionUbicacion(UbicacionId),&#xA;&#x9;FOREIGN KEY (DATAKEY) REFERENCES DimensionTiempo(DateId),&#xA;&#x9;FOREIGN KEY (Clienteld) REFERENCES DimensionCliente(Clienteld),&#xA;&#x9;FOREIGN KEY (Productold) REFERENCES DimensionProducto(Productold)&#xA;);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Tarea Ejecutar SQL"
+          TopLeft="242.5,103.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

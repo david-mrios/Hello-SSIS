@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Tiempo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="DimensionTiempo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="DateId" type="xs:unsignedShort" />
+              <xs:element minOccurs="0" name="FechaEnvio" type="xs:date" />
+              <xs:element minOccurs="0" name="FechaEntrega" type="xs:date" />
+              <xs:element minOccurs="0" name="FechaPedido" type="xs:date" />
+              <xs:element minOccurs="0" name="FechaInicio" type="xs:date" />
+              <xs:element minOccurs="0" name="FechaFin" type="xs:date" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

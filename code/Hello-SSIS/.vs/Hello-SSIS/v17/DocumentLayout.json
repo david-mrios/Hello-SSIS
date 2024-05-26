@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Descargas\\SSIS-main\\code\\Hello-SSIS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD364BF-3ECF-446A-A2F5-542BD7D72125}|Hello-SSIS\\Hello-SSIS.dtproj|D:\\Descargas\\SSIS-main\\code\\Hello-SSIS\\Hello-SSIS\\createTablesBD.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{ECD364BF-3ECF-446A-A2F5-542BD7D72125}|Hello-SSIS\\Hello-SSIS.dtproj|solutionrelative:Hello-SSIS\\createTablesBD.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD364BF-3ECF-446A-A2F5-542BD7D72125}|Hello-SSIS\\Hello-SSIS.dtproj|D:\\Descargas\\SSIS-main\\code\\Hello-SSIS\\Hello-SSIS\\ImportarXMLFile.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{ECD364BF-3ECF-446A-A2F5-542BD7D72125}|Hello-SSIS\\Hello-SSIS.dtproj|solutionrelative:Hello-SSIS\\ImportarXMLFile.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ImportarXMLFile.dtsx [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Descargas\\SSIS-main\\code\\Hello-SSIS\\Hello-SSIS\\ImportarXMLFile.dtsx",
+              "RelativeDocumentMoniker": "Hello-SSIS\\ImportarXMLFile.dtsx",
+              "ToolTip": "D:\\Descargas\\SSIS-main\\code\\Hello-SSIS\\Hello-SSIS\\ImportarXMLFile.dtsx [Dise\u00F1o]",
+              "RelativeToolTip": "Hello-SSIS\\ImportarXMLFile.dtsx [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-05-26T05:20:53.475Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "createTablesBD.dtsx [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Descargas\\SSIS-main\\code\\Hello-SSIS\\Hello-SSIS\\createTablesBD.dtsx",
+              "RelativeDocumentMoniker": "Hello-SSIS\\createTablesBD.dtsx",
+              "ToolTip": "D:\\Descargas\\SSIS-main\\code\\Hello-SSIS\\Hello-SSIS\\createTablesBD.dtsx [Dise\u00F1o]",
+              "RelativeToolTip": "Hello-SSIS\\createTablesBD.dtsx [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-05-26T05:21:03.928Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

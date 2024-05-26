@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Ofertas>
+    <DimensionOfertas>
+        <Ofertasid>1</Ofertasid>
+        <Nombre>Oferta de Verano</Nombre>
+        <Descripcion>Oferta 5</Descripcion>
+        <Descuento>11.98</Descuento>
+        <CodDescuento>30962</CodDescuento>
+        <FechaLanzamiento>2023-01-25</FechaLanzamiento>
+        <FechaCaducidad>2024-09-05</FechaCaducidad>
+    </DimensionOfertas>
+    <DimensionOfertas>
+        <Ofertasid>2</Ofertasid>
+        <Nombre>Oferta de Primavera</Nombre>
+        <Descripcion>Oferta 2</Descripcion>
+        <Descuento>12.33</Descuento>
+        <CodDescuento>72685</CodDescuento>
+        <FechaLanzamiento>2023-12-06</FechaLanzamiento>
+        <FechaCaducidad>2024-09-21</FechaCaducidad>
+    </DimensionOfertas>
+    <DimensionOfertas>
+        <Ofertasid>3</Ofertasid>
+        <Nombre>Oferta de Invierno</Nombre>
+        <Descripcion>Oferta 4</Descripcion>
+        <Descuento>34.68</Descuento>
+        <CodDescuento>39386</CodDescuento>
+        <FechaLanzamiento>2023-07-07</FechaLanzamiento>
+        <FechaCaducidad>2024-10-29</FechaCaducidad>
+    </DimensionOfertas>
+    <DimensionOfertas>
+        <Ofertasid>4</Ofertasid>
+        <Nombre>Oferta de Otoño</Nombre>
+        <Descripcion>Oferta 4</Descripcion>
+        <Descuento>33.12</Descuento>
+        <CodDescuento>41788</CodDescuento>
+        <FechaLanzamiento>2024-05-03</FechaLanzamiento>
+        <FechaCaducidad>2024-10-30</FechaCaducidad>
+    </DimensionOfertas>
+</Ofertas>

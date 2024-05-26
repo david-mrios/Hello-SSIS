@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Cliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="DimensionCliente">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Clienteld" type="xs:unsignedShort" />
+              <xs:element minOccurs="0" name="Nombre" type="xs:string" />
+              <xs:element minOccurs="0" name="Apellido" type="xs:string" />
+              <xs:element minOccurs="0" name="Email" type="xs:string" />
+              <xs:element minOccurs="0" name="Telefono" type="xs:unsignedInt" />
+              <xs:element minOccurs="0" name="Direccion" type="xs:string" />
+              <xs:element minOccurs="0" name="Ciudad" type="xs:string" />
+              <xs:element minOccurs="0" name="Pais" type="xs:string" />
+              <xs:element minOccurs="0" name="Estado" type="xs:string" />
+              <xs:element minOccurs="0" name="CodigoPostal" type="xs:unsignedInt" />
+              <xs:element minOccurs="0" name="PuntosFidelidad" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="Fechalnicio" type="xs:date" />
+              <xs:element minOccurs="0" name="FechaFin" type="xs:date" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

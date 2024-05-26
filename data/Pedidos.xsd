@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Pedidos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="DimensionPedido">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Pedidold" type="xs:unsignedShort" />
+              <xs:element minOccurs="0" name="NombreMetodoPago" type="xs:string" />
+              <xs:element minOccurs="0" name="DireccionPago" type="xs:string" />
+              <xs:element minOccurs="0" name="PrecioUnitario" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Cantidad" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="NombreEstado" type="xs:string" />
+              <xs:element minOccurs="0" name="Fechalnicio" type="xs:date" />
+              <xs:element minOccurs="0" name="FechaFin" type="xs:date" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
