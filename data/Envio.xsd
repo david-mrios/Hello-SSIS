@@ -7,13 +7,13 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element minOccurs="0" name="EnviosID" type="xs:unsignedShort" />
-              <xs:element minOccurs="0" name="Pedidold" type="xs:unsignedShort" />
+              <xs:element minOccurs="0" name="PedidoId" type="xs:unsignedShort" />
               <xs:element minOccurs="0" name="OfertasId" type="xs:unsignedByte" />
-              <xs:element minOccurs="0" name="AreaEnviold" type="xs:decimal" />
-              <xs:element minOccurs="0" name="Clienteld" type="xs:decimal" />
-              <xs:element minOccurs="0" name="Productold" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AreaEnvioId" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ClienteId" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ProductoId" type="xs:decimal" />
               <xs:element minOccurs="0" name="DATAKEY" type="xs:decimal" />
-              <xs:element minOccurs="0" name="Ubicacionld" type="xs:decimal" />
+              <xs:element minOccurs="0" name="UbicacionId" type="xs:decimal" />
               <xs:element minOccurs="0" name="EmpresaEnvio" type="xs:string" />
               <xs:element minOccurs="0" name="MetodoEnvio" type="xs:string" />
             </xs:sequence>

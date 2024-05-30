@@ -5,7 +5,7 @@
         <NombreArea>Area D</NombreArea>
         <CostoEnvio>103.98</CostoEnvio>
     </DimensionAreaEnvio>
-    <DimensionAreaEnvio>
+    <DimensionAreaEnvio>    
         <AreaEnviold>2</AreaEnviold>
         <NombreArea>Area B</NombreArea>
         <CostoEnvio>112.06</CostoEnvio>

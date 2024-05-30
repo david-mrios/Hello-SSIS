@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>Hello-SSIS</Name>
-    <LastWriteTime>2024-05-26T15:59:27.3664897Z</LastWriteTime>
+    <LastWriteTime>2024-05-28T13:34:36.3924604Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>createTablesBD.dtsx</Name>
-      <LastWriteTime>2024-05-26T17:11:23.9957976Z</LastWriteTime>
+      <LastWriteTime>2024-05-30T08:17:25.4952058Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ImportarXMLFile.dtsx</Name>
-      <LastWriteTime>2024-05-26T17:20:07.4610828Z</LastWriteTime>
+      <LastWriteTime>2024-05-30T08:34:26.9283514Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

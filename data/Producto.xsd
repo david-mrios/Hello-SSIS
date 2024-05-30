@@ -6,7 +6,7 @@
         <xs:element minOccurs="0" maxOccurs="unbounded" name="DimensionProducto">
           <xs:complexType>
             <xs:sequence>
-              <xs:element minOccurs="0" name="Productold" type="xs:unsignedShort" />
+              <xs:element minOccurs="0" name="ProductoId" type="xs:unsignedShort" />
               <xs:element minOccurs="0" name="Nombre" type="xs:string" />
               <xs:element minOccurs="0" name="FechaAgregado" type="xs:date" />
               <xs:element minOccurs="0" name="Dimensiones" type="xs:string" />

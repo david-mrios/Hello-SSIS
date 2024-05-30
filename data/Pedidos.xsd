@@ -6,7 +6,7 @@
         <xs:element minOccurs="0" maxOccurs="unbounded" name="DimensionPedido">
           <xs:complexType>
             <xs:sequence>
-              <xs:element minOccurs="0" name="Pedidold" type="xs:unsignedShort" />
+              <xs:element minOccurs="0" name="PedidoId" type="xs:unsignedShort" />
               <xs:element minOccurs="0" name="NombreMetodoPago" type="xs:string" />
               <xs:element minOccurs="0" name="DireccionPago" type="xs:string" />
               <xs:element minOccurs="0" name="PrecioUnitario" type="xs:decimal" />
