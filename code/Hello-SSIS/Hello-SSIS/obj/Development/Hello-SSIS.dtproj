@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">SRDAVID</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7vjaaVJD3EK4V3g1xdgcnAAAAAACAAAAAAAQZgAAAAEAACAAAACvG33S7xMFCxx0uYid2Y/8ligDCw+ta8HKuYRhJUT3zQAAAAAOgAAAAAIAACAAAAD/4+CrGuGS3WxLETEhQh1/L+VLGhVwcMKIK5XVDtoq0pAAAABlAiWkhxVwPNbY3pyDE3Z8h6MIcrL9t2HV6kJj/1kzqVofxX/2uQO3h33OomLkKZL8H2DoUt38ahQjm2xTA5FS3mWTRz22pWj+fqt+43xIw1BOHezF7lMhZnLVntBRckHP3+MxL8Zi5QEVWbaMOhvLTLdRRQ86yOVllDocOIlojXjpW5RPjX/Cjt8UNmuepXdAAAAAM67K0fiEh2wkONWpM/iuGNIBMD8cDBH5ROnGHnWBq4VZRLVlkvZJalBtH6hlLFIMpGazciD00e9iYJsRS+3Baw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7vjaaVJD3EK4V3g1xdgcnAAAAAACAAAAAAAQZgAAAAEAACAAAADaqzuucovNqtpPN9QvfSAYBHSSJjL3MLXAZ/5wPKqDUQAAAAAOgAAAAAIAACAAAAAf2y1JSLyU6NEd+DNaZ1HRzrOO/WhQem7/Zt9WKvYwWJAAAACHMNVLuzDdUV2VRSBv87qhZP0mbnDASAbvck9a9QGHKrt9iFA9yJIcMqGjPk0dL1aBExO/z5gj7m1QZFZsX9CeYYfAm9A+qMEtPXN+YtkOX5eB4CHHkIy3XP3nCzE+OA8zSAOVWyHErOIDCRJPrKkF0mzKC4F1Vqd592DdOOCRk1Ivfb5DcBoWNDr+acvdP/BAAAAAZPxZFnDelrYSQOs+h5+o9StDbmpQOKXQwmNG6qkDzj1wJiHJXzvKmfLRGyUwLW1EJzXpRMiUq0G/vVzV5LatVg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -43,10 +43,10 @@
                 <SSIS:Property SSIS:Name="Name">createTablesBD</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">13</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">15</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{07CC2A5C-B356-4C42-ABAE-31317BA17D5E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{BDE43415-49BF-4F96-8FB8-C2E3BA9A9EF7}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -505,10 +505,10 @@
                 <SSIS:Property SSIS:Name="Name">ImportarXMLFilePedidos</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">80</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">94</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{A2F5EA76-ED99-41D2-9BB7-1B3D8CB7EC3E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{1D4887B4-FAAF-4891-AFBD-838B61147443}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
