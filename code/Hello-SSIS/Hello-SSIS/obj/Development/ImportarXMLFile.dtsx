@@ -11,8 +11,8 @@
   DTS:LocaleID="19466"
   DTS:ObjectName="ImportarXMLFilePedidos"
   DTS:PackageType="5"
-  DTS:VersionBuild="71"
-  DTS:VersionGUID="{C7EDF99A-4F0E-47E2-8C87-46874F588312}">
+  DTS:VersionBuild="75"
+  DTS:VersionGUID="{72620842-924F-4CC2-89C1-D4036B4E304F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -531,68 +531,58 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Nombre"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Nombre]" />
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Nombre]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[Apellido]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Apellido"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Apellido]" />
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Apellido]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[Email]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Email"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Email]" />
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Email]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[Telefono]"
                       cachedDataType="ui4"
                       cachedName="Telefono"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Telefono]" />
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Telefono]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[Direccion]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Direccion"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Direccion]" />
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Direccion]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[Ciudad]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Ciudad"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Ciudad]" />
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Ciudad]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[Pais]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Pais"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Pais]" />
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Pais]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[Estado]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Estado"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Estado]" />
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Estado]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[CodigoPostal]"
                       cachedDataType="ui4"
                       cachedName="CodigoPostal"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[CodigoPostal]" />
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[CodigoPostal]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[PuntosFidelidad]"
                       cachedDataType="ui1"
                       cachedName="PuntosFidelidad"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[PuntosFidelidad]" />
-                    <inputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[FechaInicio]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="FechaInicio"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[FechaInicio]" />
-                    <inputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[FechaFin]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="FechaFin"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[FechaFin]" />
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[PuntosFidelidad]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -609,7 +599,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="100"
+                      length="255"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Nombre]"
                       name="Nombre"
                       truncationRowDisposition="FailComponent">
@@ -618,7 +608,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Nombre]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Nombre]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -630,7 +620,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="100"
+                      length="255"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Apellido]"
                       name="Apellido"
                       truncationRowDisposition="FailComponent">
@@ -639,7 +629,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Apellido]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Apellido]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -651,7 +641,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="100"
+                      length="255"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Email]"
                       name="Email"
                       truncationRowDisposition="FailComponent">
@@ -660,7 +650,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Email]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Email]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -680,7 +670,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Telefono]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Telefono]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -692,7 +682,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="100"
+                      length="255"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Direccion]"
                       name="Direccion"
                       truncationRowDisposition="FailComponent">
@@ -701,7 +691,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Direccion]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Direccion]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -713,7 +703,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="100"
+                      length="255"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Ciudad]"
                       name="Ciudad"
                       truncationRowDisposition="FailComponent">
@@ -722,7 +712,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Ciudad]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Ciudad]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -734,7 +724,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="100"
+                      length="255"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Pais]"
                       name="Pais"
                       truncationRowDisposition="FailComponent">
@@ -743,7 +733,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Pais]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Pais]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -755,7 +745,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="100"
+                      length="255"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Estado]"
                       name="Estado"
                       truncationRowDisposition="FailComponent">
@@ -764,7 +754,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Estado]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Estado]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -784,7 +774,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[CodigoPostal]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[CodigoPostal]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -804,47 +794,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[PuntosFidelidad]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[FechaInicio]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[FechaInicio]"
-                      name="FechaInicio"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[FechaInicio]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[FechaFin]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[FechaFin]"
-                      name="FechaFin"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[FechaFin]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[PuntosFidelidad]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -955,25 +905,25 @@
                       cachedDataType="ui2"
                       cachedName="ClienteId"
                       externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ClienteId]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[ClienteId]" />
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[ClienteId]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Nombre]"
                       cachedDataType="wstr"
-                      cachedLength="100"
+                      cachedLength="255"
                       cachedName="Nombre"
                       externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Nombre]"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Nombre]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Apellido]"
                       cachedDataType="wstr"
-                      cachedLength="100"
+                      cachedLength="255"
                       cachedName="Apellido"
                       externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Apellido]"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Apellido]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Email]"
                       cachedDataType="wstr"
-                      cachedLength="100"
+                      cachedLength="255"
                       cachedName="Email"
                       externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Email]" />
@@ -986,28 +936,28 @@
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Direccion]"
                       cachedDataType="wstr"
-                      cachedLength="100"
+                      cachedLength="255"
                       cachedName="Direccion"
                       externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Direccion]"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Direccion]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Ciudad]"
                       cachedDataType="wstr"
-                      cachedLength="100"
+                      cachedLength="255"
                       cachedName="Ciudad"
                       externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Ciudad]"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Ciudad]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Pais]"
                       cachedDataType="wstr"
-                      cachedLength="100"
+                      cachedLength="255"
                       cachedName="Pais"
                       externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Pais]"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Pais]" />
                     <inputColumn
                       refId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Estado]"
                       cachedDataType="wstr"
-                      cachedLength="100"
+                      cachedLength="255"
                       cachedName="Estado"
                       externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Estado]"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Estado]" />
@@ -1023,18 +973,6 @@
                       cachedName="PuntosFidelidad"
                       externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PuntosFidelidad]"
                       lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[PuntosFidelidad]" />
-                    <inputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FechaInicio]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="FechaInicio"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaInicio]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[FechaInicio]" />
-                    <inputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FechaFin]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="FechaFin"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaFin]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[FechaFin]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1167,144 +1105,126 @@
               </properties>
               <outputs>
                 <output
-                  refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente]"
-                  name="DimensionCliente">
+                  refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente]"
+                  name="Cliente">
                   <properties>
                     <property
                       dataType="System.String"
                       description="Identifica el conjunto de filas asociado a la salida."
-                      name="RowsetID">DimensionCliente</property>
+                      name="RowsetID">Cliente</property>
                   </properties>
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[ClienteId]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[ClienteId]"
                       dataType="ui2"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[ClienteId]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[ClienteId]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[ClienteId]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[ClienteId]"
                       name="ClienteId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Nombre]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Nombre]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Nombre]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Nombre]"
                       length="255"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Nombre]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Nombre]"
                       name="Nombre"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Apellido]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Apellido]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Apellido]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Apellido]"
                       length="255"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Apellido]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Apellido]"
                       name="Apellido"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Email]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Email]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Email]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Email]"
                       length="255"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Email]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Email]"
                       name="Email"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Telefono]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Telefono]"
                       dataType="ui4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Telefono]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Telefono]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Telefono]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Telefono]"
                       name="Telefono"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Direccion]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Direccion]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Direccion]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Direccion]"
                       length="255"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Direccion]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Direccion]"
                       name="Direccion"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Ciudad]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Ciudad]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Ciudad]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Ciudad]"
                       length="255"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Ciudad]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Ciudad]"
                       name="Ciudad"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Pais]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Pais]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Pais]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Pais]"
                       length="255"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Pais]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Pais]"
                       name="Pais"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Estado]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Estado]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Estado]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Estado]"
                       length="255"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[Estado]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[Estado]"
                       name="Estado"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[CodigoPostal]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[CodigoPostal]"
                       dataType="ui4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[CodigoPostal]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[CodigoPostal]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[CodigoPostal]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[CodigoPostal]"
                       name="CodigoPostal"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[PuntosFidelidad]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[PuntosFidelidad]"
                       dataType="ui1"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[PuntosFidelidad]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[PuntosFidelidad]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[PuntosFidelidad]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].Columns[PuntosFidelidad]"
                       name="PuntosFidelidad"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[FechaInicio]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[FechaInicio]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[FechaInicio]"
-                      name="FechaInicio"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[FechaFin]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[FechaFin]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].Columns[FechaFin]"
-                      name="FechaFin"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[ClienteId]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[ClienteId]"
                       dataType="ui2"
                       name="ClienteId">
                       <properties>
@@ -1314,7 +1234,7 @@
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Nombre]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Nombre]"
                       dataType="wstr"
                       length="255"
                       name="Nombre">
@@ -1325,7 +1245,7 @@
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Apellido]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Apellido]"
                       dataType="wstr"
                       length="255"
                       name="Apellido">
@@ -1336,7 +1256,7 @@
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Email]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Email]"
                       dataType="wstr"
                       length="255"
                       name="Email">
@@ -1347,7 +1267,7 @@
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Telefono]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Telefono]"
                       dataType="ui4"
                       name="Telefono">
                       <properties>
@@ -1357,7 +1277,7 @@
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Direccion]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Direccion]"
                       dataType="wstr"
                       length="255"
                       name="Direccion">
@@ -1368,7 +1288,7 @@
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Ciudad]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Ciudad]"
                       dataType="wstr"
                       length="255"
                       name="Ciudad">
@@ -1379,7 +1299,7 @@
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Pais]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Pais]"
                       dataType="wstr"
                       length="255"
                       name="Pais">
@@ -1390,7 +1310,7 @@
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[Estado]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[Estado]"
                       dataType="wstr"
                       length="255"
                       name="Estado">
@@ -1401,7 +1321,7 @@
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[CodigoPostal]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[CodigoPostal]"
                       dataType="ui4"
                       name="CodigoPostal">
                       <properties>
@@ -1411,7 +1331,7 @@
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[PuntosFidelidad]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente].ExternalColumns[PuntosFidelidad]"
                       dataType="ui1"
                       name="PuntosFidelidad">
                       <properties>
@@ -1420,184 +1340,144 @@
                           name="CLRType">System.Byte</property>
                       </properties>
                     </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[FechaInicio]"
-                      dataType="dbTimeStamp"
-                      name="FechaInicio">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          name="CLRType">System.DateTime</property>
-                      </properties>
-                    </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente].ExternalColumns[FechaFin]"
-                      dataType="dbTimeStamp"
-                      name="FechaFin">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          name="CLRType">System.DateTime</property>
-                      </properties>
-                    </externalMetadataColumn>
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente]"
+                  refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente]"
                   isErrorOut="true"
-                  name="Salida de error de DimensionCliente">
+                  name="Salida de error de Cliente">
                   <properties>
                     <property
                       dataType="System.String"
                       description="Identifica el conjunto de filas asociado a la salida."
-                      name="RowsetID">DimensionCliente</property>
+                      name="RowsetID">Cliente</property>
                   </properties>
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[ClienteId]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[ClienteId]"
                       dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[ClienteId]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[ClienteId]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[ClienteId]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[ClienteId]"
                       name="ClienteId" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Nombre]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Nombre]"
                       dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Nombre]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Nombre]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Nombre]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Nombre]"
                       name="Nombre" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Apellido]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Apellido]"
                       dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Apellido]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Apellido]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Apellido]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Apellido]"
                       name="Apellido" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Email]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Email]"
                       dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Email]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Email]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Email]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Email]"
                       name="Email" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Telefono]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Telefono]"
                       dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Telefono]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Telefono]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Telefono]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Telefono]"
                       name="Telefono" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Direccion]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Direccion]"
                       dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Direccion]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Direccion]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Direccion]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Direccion]"
                       name="Direccion" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Ciudad]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Ciudad]"
                       dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Ciudad]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Ciudad]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Ciudad]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Ciudad]"
                       name="Ciudad" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Pais]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Pais]"
                       dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Pais]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Pais]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Pais]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Pais]"
                       name="Pais" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Estado]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Estado]"
                       dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Estado]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[Estado]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Estado]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[Estado]"
                       name="Estado" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[CodigoPostal]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[CodigoPostal]"
                       dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[CodigoPostal]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[CodigoPostal]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[CodigoPostal]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[CodigoPostal]"
                       name="CodigoPostal" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[PuntosFidelidad]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[PuntosFidelidad]"
                       dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[PuntosFidelidad]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[PuntosFidelidad]"
+                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[PuntosFidelidad]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[PuntosFidelidad]"
                       name="PuntosFidelidad" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[FechaInicio]"
-                      dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[FechaInicio]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[FechaInicio]"
-                      name="FechaInicio" />
-                    <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[FechaFin]"
-                      dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[FechaFin]"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[FechaFin]"
-                      name="FechaFin" />
-                    <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[ErrorCode]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[ErrorCode]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[ErrorColumn]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].Columns[ErrorColumn]"
+                      lineageId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[ClienteId]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[ClienteId]"
                       dataType="nText"
                       name="ClienteId" />
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Nombre]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Nombre]"
                       dataType="nText"
                       name="Nombre" />
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Apellido]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Apellido]"
                       dataType="nText"
                       name="Apellido" />
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Email]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Email]"
                       dataType="nText"
                       name="Email" />
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Telefono]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Telefono]"
                       dataType="nText"
                       name="Telefono" />
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Direccion]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Direccion]"
                       dataType="nText"
                       name="Direccion" />
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Ciudad]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Ciudad]"
                       dataType="nText"
                       name="Ciudad" />
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Pais]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Pais]"
                       dataType="nText"
                       name="Pais" />
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[Estado]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[Estado]"
                       dataType="nText"
                       name="Estado" />
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[CodigoPostal]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[CodigoPostal]"
                       dataType="nText"
                       name="CodigoPostal" />
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[PuntosFidelidad]"
+                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de Cliente].ExternalColumns[PuntosFidelidad]"
                       dataType="nText"
                       name="PuntosFidelidad" />
-                    <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[FechaInicio]"
-                      dataType="nText"
-                      name="FechaInicio" />
-                    <externalMetadataColumn
-                      refId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Salida de error de DimensionCliente].ExternalColumns[FechaFin]"
-                      dataType="nText"
-                      name="FechaFin" />
                   </externalMetadataColumns>
                 </output>
               </outputs>
@@ -1605,15 +1485,15 @@
           </components>
           <paths>
             <path
+              refId="Package\ImportarDatosClienteSQLServer.Paths[Cliente]"
+              endId="Package\ImportarDatosClienteSQLServer\Data Conversion.Inputs[Data Conversion Input]"
+              name="Cliente"
+              startId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[Cliente]" />
+            <path
               refId="Package\ImportarDatosClienteSQLServer.Paths[Data Conversion Output]"
               endId="Package\ImportarDatosClienteSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Data Conversion Output"
               startId="Package\ImportarDatosClienteSQLServer\Data Conversion.Outputs[Data Conversion Output]" />
-            <path
-              refId="Package\ImportarDatosClienteSQLServer.Paths[DimensionCliente]"
-              endId="Package\ImportarDatosClienteSQLServer\Data Conversion.Inputs[Data Conversion Input]"
-              name="DimensionCliente"
-              startId="Package\ImportarDatosClienteSQLServer\Origen XML.Outputs[DimensionCliente]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -6149,60 +6029,22 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="161,42"
-          Id="Package\ImportarDatosClienteSQLServer\Data Conversion"
-          TopLeft="211.5,210.5" />
-        <NodeLayout
           Size="138,42"
           Id="Package\ImportarDatosClienteSQLServer\Origen XML"
-          TopLeft="102.5,133.5" />
+          TopLeft="35.5,35.5" />
         <NodeLayout
-          Size="177,42"
-          Id="Package\ImportarDatosClienteSQLServer\OLE DB Destination"
-          TopLeft="273.5,338.5" />
+          Size="161,42"
+          Id="Package\ImportarDatosClienteSQLServer\Data Conversion"
+          TopLeft="159.5,163.5" />
         <EdgeLayout
-          Id="Package\ImportarDatosClienteSQLServer.Paths[DimensionCliente]"
-          TopLeft="171.5,175.5">
+          Id="Package\ImportarDatosClienteSQLServer.Paths[Cliente]"
+          TopLeft="104.5,77.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="120.5,35"
+              EndConnector="135.5,86"
               Start="0,0"
-              End="120.5,27.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,13.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13.5"
-                    Point2="0,17.5"
-                    Point3="4,17.5" />
-                  <mssgle:LineSegment
-                    End="116.5,17.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="116.5,17.5"
-                    Point2="120.5,17.5"
-                    Point3="120.5,21.5" />
-                  <mssgle:LineSegment
-                    End="120.5,27.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ImportarDatosClienteSQLServer.Paths[Data Conversion Output]"
-          TopLeft="292,252.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="70,86"
-              Start="0,0"
-              End="70,78.5">
+              End="135.5,78.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -6213,13 +6055,51 @@
                     Point2="0,43"
                     Point3="4,43" />
                   <mssgle:LineSegment
-                    End="66,43" />
+                    End="131.5,43" />
                   <mssgle:CubicBezierSegment
-                    Point1="66,43"
-                    Point2="70,43"
-                    Point3="70,47" />
+                    Point1="131.5,43"
+                    Point2="135.5,43"
+                    Point3="135.5,47" />
                   <mssgle:LineSegment
-                    End="70,78.5" />
+                    End="135.5,78.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\ImportarDatosClienteSQLServer\OLE DB Destination"
+          TopLeft="271.5,296.5" />
+        <EdgeLayout
+          Id="Package\ImportarDatosClienteSQLServer.Paths[Data Conversion Output]"
+          TopLeft="240,205.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="120,91"
+              Start="0,0"
+              End="120,83.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.5"
+                    Point2="0,45.5"
+                    Point3="4,45.5" />
+                  <mssgle:LineSegment
+                    End="116,45.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="116,45.5"
+                    Point2="120,45.5"
+                    Point3="120,49.5" />
+                  <mssgle:LineSegment
+                    End="120,83.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6231,19 +6111,6 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\ImportarDatosClienteSQLServer\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\ImportarDatosEnvioSQLServer">
     <LayoutInfo>
@@ -6851,6 +6718,19 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\ImportarDatosUbicacionSQLServer\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ImportarDatosClienteSQLServer\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
