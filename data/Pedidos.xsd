@@ -12,8 +12,6 @@
               <xs:element minOccurs="0" name="PrecioUnitario" type="xs:decimal" />
               <xs:element minOccurs="0" name="Cantidad" type="xs:unsignedByte" />
               <xs:element minOccurs="0" name="NombreEstado" type="xs:string" />
-              <xs:element minOccurs="0" name="Fechalnicio" type="xs:date" />
-              <xs:element minOccurs="0" name="FechaFin" type="xs:date" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

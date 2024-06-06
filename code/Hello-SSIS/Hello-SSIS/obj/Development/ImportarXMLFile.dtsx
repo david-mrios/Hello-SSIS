@@ -11,8 +11,8 @@
   DTS:LocaleID="19466"
   DTS:ObjectName="ImportarXMLFilePedidos"
   DTS:PackageType="5"
-  DTS:VersionBuild="94"
-  DTS:VersionGUID="{1D4887B4-FAAF-4891-AFBD-838B61147443}">
+  DTS:VersionBuild="107"
+  DTS:VersionGUID="{94C26494-82D4-47D7-A280-435849F1F6B3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1502,7 +1502,6 @@
       DTS:refId="Package\ImportarDatosEnvioSQLServer"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{7598a5fa-7ef5-4560-aeb0-f8da345b5a17}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -1554,11 +1553,11 @@
                       cachedScale="10"
                       lineageId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].Columns[ProductoId]" />
                     <inputColumn
-                      refId="Package\ImportarDatosEnvioSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[DATAKEY]"
+                      refId="Package\ImportarDatosEnvioSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[DATEKEY]"
                       cachedDataType="decimal"
-                      cachedName="DATAKEY"
+                      cachedName="DATEKEY"
                       cachedScale="10"
-                      lineageId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].Columns[DATAKEY]" />
+                      lineageId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].Columns[DATEKEY]" />
                     <inputColumn
                       refId="Package\ImportarDatosEnvioSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[UbicacionId]"
                       cachedDataType="decimal"
@@ -1692,12 +1691,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\ImportarDatosEnvioSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[DATAKEY]"
+                      refId="Package\ImportarDatosEnvioSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[DATEKEY]"
                       dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\ImportarDatosEnvioSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[DATAKEY]"
-                      name="DATAKEY"
+                      lineageId="Package\ImportarDatosEnvioSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[DATEKEY]"
+                      name="DATEKEY"
                       scale="10"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1705,7 +1704,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].Columns[DATAKEY]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].Columns[DATEKEY]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1912,14 +1911,14 @@
                       cachedName="ProductoId"
                       cachedScale="10"
                       externalMetadataColumnId="Package\ImportarDatosEnvioSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductoId]"
-                      lineageId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].Columns[ProductoId]" />
+                      lineageId="Package\ImportarDatosEnvioSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[ProductoId]" />
                     <inputColumn
-                      refId="Package\ImportarDatosEnvioSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DATAKEY]"
+                      refId="Package\ImportarDatosEnvioSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DATEKEY]"
                       cachedDataType="decimal"
-                      cachedName="DATAKEY"
+                      cachedName="DATEKEY"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\ImportarDatosEnvioSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DATAKEY]"
-                      lineageId="Package\ImportarDatosEnvioSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[DATAKEY]" />
+                      externalMetadataColumnId="Package\ImportarDatosEnvioSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DATEKEY]"
+                      lineageId="Package\ImportarDatosEnvioSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[DATEKEY]" />
                     <inputColumn
                       refId="Package\ImportarDatosEnvioSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UbicacionId]"
                       cachedDataType="decimal"
@@ -1969,9 +1968,9 @@
                       dataType="i4"
                       name="ProductoId" />
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosEnvioSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DATAKEY]"
+                      refId="Package\ImportarDatosEnvioSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DATEKEY]"
                       dataType="i4"
-                      name="DATAKEY" />
+                      name="DATEKEY" />
                     <externalMetadataColumn
                       refId="Package\ImportarDatosEnvioSQLServer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UbicacionId]"
                       dataType="i4"
@@ -2038,7 +2037,7 @@
                   dataType="System.String"
                   description="Datos XML que usa el adaptador de origen XML."
                   expressionType="Notify"
-                  name="XMLData">D:\Documentos\Repositorios\Hello-SSIS\data\Envio.xml</property>
+                  name="XMLData">C:\Users\David\Documents\Local\Hello-SSIS\data\Envio.xml</property>
                 <property
                   dataType="System.String"
                   description="Variable que usa el adaptador de origen XML para especificar datos XML."
@@ -2051,7 +2050,7 @@
                   dataType="System.String"
                   description="Definición de esquema XML que usa el adaptador de origen XML."
                   expressionType="Notify"
-                  name="XMLSchemaDefinition">D:\Documentos\Repositorios\Hello-SSIS\data\Envio.xsd</property>
+                  name="XMLSchemaDefinition">C:\Users\David\Documents\Local\Hello-SSIS\data\Envio.xsd</property>
                 <property
                   dataType="System.Boolean"
                   description="Identifica si se usará el esquema insertado."
@@ -2131,13 +2130,13 @@
                       scale="10"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].Columns[DATAKEY]"
+                      refId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].Columns[DATEKEY]"
                       dataType="decimal"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].ExternalColumns[DATAKEY]"
-                      lineageId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].Columns[DATAKEY]"
-                      name="DATAKEY"
+                      externalMetadataColumnId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].ExternalColumns[DATEKEY]"
+                      lineageId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].Columns[DATEKEY]"
+                      name="DATEKEY"
                       scale="10"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
@@ -2237,9 +2236,9 @@
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].ExternalColumns[DATAKEY]"
+                      refId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[FactTableEnvio].ExternalColumns[DATEKEY]"
                       dataType="decimal"
-                      name="DATAKEY"
+                      name="DATEKEY"
                       scale="10">
                       <properties>
                         <property
@@ -2330,11 +2329,11 @@
                       lineageId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[Salida de error de FactTableEnvio].Columns[ProductoId]"
                       name="ProductoId" />
                     <outputColumn
-                      refId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[Salida de error de FactTableEnvio].Columns[DATAKEY]"
+                      refId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[Salida de error de FactTableEnvio].Columns[DATEKEY]"
                       dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[Salida de error de FactTableEnvio].ExternalColumns[DATAKEY]"
-                      lineageId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[Salida de error de FactTableEnvio].Columns[DATAKEY]"
-                      name="DATAKEY" />
+                      externalMetadataColumnId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[Salida de error de FactTableEnvio].ExternalColumns[DATEKEY]"
+                      lineageId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[Salida de error de FactTableEnvio].Columns[DATEKEY]"
+                      name="DATEKEY" />
                     <outputColumn
                       refId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[Salida de error de FactTableEnvio].Columns[UbicacionId]"
                       dataType="nText"
@@ -2393,9 +2392,9 @@
                       dataType="nText"
                       name="ProductoId" />
                     <externalMetadataColumn
-                      refId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[Salida de error de FactTableEnvio].ExternalColumns[DATAKEY]"
+                      refId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[Salida de error de FactTableEnvio].ExternalColumns[DATEKEY]"
                       dataType="nText"
-                      name="DATAKEY" />
+                      name="DATEKEY" />
                     <externalMetadataColumn
                       refId="Package\ImportarDatosEnvioSQLServer\Origen XML.Outputs[Salida de error de FactTableEnvio].ExternalColumns[UbicacionId]"
                       dataType="nText"
@@ -3151,7 +3150,7 @@
       DTS:refId="Package\ImportarDatosPedidosSQLServer"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{897DD917-92BD-4198-9002-3D44E89C6887}"
+      DTS:DTSID="{5DA53B3C-287C-4980-96CB-51D625EB60E8}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="ImportarDatosPedidosSQLServer"
@@ -3174,23 +3173,11 @@
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[PrecioUnitario]"
-                      cachedDataType="decimal"
-                      cachedName="PrecioUnitario"
-                      cachedScale="10"
-                      lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[PrecioUnitario]" />
-                    <inputColumn
                       refId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[NombreMetodoPago]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="NombreMetodoPago"
                       lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[NombreMetodoPago]" />
-                    <inputColumn
-                      refId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[NombreEstado]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="NombreEstado"
-                      lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[NombreEstado]" />
                     <inputColumn
                       refId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[DireccionPago]"
                       cachedDataType="wstr"
@@ -3198,10 +3185,22 @@
                       cachedName="DireccionPago"
                       lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[DireccionPago]" />
                     <inputColumn
+                      refId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[PrecioUnitario]"
+                      cachedDataType="decimal"
+                      cachedName="PrecioUnitario"
+                      cachedScale="10"
+                      lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[PrecioUnitario]" />
+                    <inputColumn
                       refId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[Cantidad]"
                       cachedDataType="ui1"
                       cachedName="Cantidad"
                       lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[Cantidad]" />
+                    <inputColumn
+                      refId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Inputs[Data Conversion Input].Columns[NombreEstado]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="NombreEstado"
+                      lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[NombreEstado]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -3213,27 +3212,6 @@
                   name="Data Conversion Output"
                   synchronousInputId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Inputs[Data Conversion Input]">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[PrecioUnitario]"
-                      dataType="decimal"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[PrecioUnitario]"
-                      name="PrecioUnitario"
-                      scale="10"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[PrecioUnitario]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
                     <outputColumn
                       refId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[NombreMetodoPago]"
                       dataType="wstr"
@@ -3249,27 +3227,6 @@
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
                           name="SourceInputColumnLineageID">#{Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[NombreMetodoPago]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[NombreEstado]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="100"
-                      lineageId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[NombreEstado]"
-                      name="NombreEstado"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[NombreEstado]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -3298,6 +3255,27 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
+                      refId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[PrecioUnitario]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[PrecioUnitario]"
+                      name="PrecioUnitario"
+                      scale="10"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[PrecioUnitario]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
                       refId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[Cantidad]"
                       dataType="ui1"
                       errorOrTruncationOperation="Conversion"
@@ -3311,6 +3289,27 @@
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
                           name="SourceInputColumnLineageID">#{Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[Cantidad]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[NombreEstado]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\ImportarDatosPedidosSQLServer\Data Conversion.Outputs[Data Conversion Output].Columns[NombreEstado]"
+                      name="NombreEstado"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[NombreEstado]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -3390,7 +3389,7 @@
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">true</property>
+                  name="FastLoadKeepNulls">false</property>
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
@@ -3633,24 +3632,6 @@
                       lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[NombreEstado]"
                       name="NombreEstado"
                       truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[Fechalnicio]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].ExternalColumns[Fechalnicio]"
-                      lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[Fechalnicio]"
-                      name="Fechalnicio"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[FechaFin]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].ExternalColumns[FechaFin]"
-                      lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].Columns[FechaFin]"
-                      name="FechaFin"
-                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3718,26 +3699,6 @@
                           name="CLRType">System.String</property>
                       </properties>
                     </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].ExternalColumns[Fechalnicio]"
-                      dataType="dbTimeStamp"
-                      name="Fechalnicio">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          name="CLRType">System.DateTime</property>
-                      </properties>
-                    </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[DimensionPedido].ExternalColumns[FechaFin]"
-                      dataType="dbTimeStamp"
-                      name="FechaFin">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          name="CLRType">System.DateTime</property>
-                      </properties>
-                    </externalMetadataColumn>
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -3788,18 +3749,6 @@
                       lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[Salida de error de DimensionPedido].Columns[NombreEstado]"
                       name="NombreEstado" />
                     <outputColumn
-                      refId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[Salida de error de DimensionPedido].Columns[Fechalnicio]"
-                      dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[Salida de error de DimensionPedido].ExternalColumns[Fechalnicio]"
-                      lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[Salida de error de DimensionPedido].Columns[Fechalnicio]"
-                      name="Fechalnicio" />
-                    <outputColumn
-                      refId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[Salida de error de DimensionPedido].Columns[FechaFin]"
-                      dataType="nText"
-                      externalMetadataColumnId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[Salida de error de DimensionPedido].ExternalColumns[FechaFin]"
-                      lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[Salida de error de DimensionPedido].Columns[FechaFin]"
-                      name="FechaFin" />
-                    <outputColumn
                       refId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[Salida de error de DimensionPedido].Columns[ErrorCode]"
                       dataType="i4"
                       lineageId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[Salida de error de DimensionPedido].Columns[ErrorCode]"
@@ -3838,14 +3787,6 @@
                       refId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[Salida de error de DimensionPedido].ExternalColumns[NombreEstado]"
                       dataType="nText"
                       name="NombreEstado" />
-                    <externalMetadataColumn
-                      refId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[Salida de error de DimensionPedido].ExternalColumns[Fechalnicio]"
-                      dataType="nText"
-                      name="Fechalnicio" />
-                    <externalMetadataColumn
-                      refId="Package\ImportarDatosPedidosSQLServer\Origen XML.Outputs[Salida de error de DimensionPedido].ExternalColumns[FechaFin]"
-                      dataType="nText"
-                      name="FechaFin" />
                   </externalMetadataColumns>
                 </output>
               </outputs>
@@ -5814,6 +5755,56 @@
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{BA893773-078C-4268-AA79-FC103DF0AE99}"
+      DTS:From="Package\ImportarDatosPedidosSQLServer"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\ImportarDatosUbicacionSQLServer" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{9CC0A9E9-5A64-4B46-BC0F-5BF5EA699A28}"
+      DTS:From="Package\ImportarDatosUbicacionSQLServer"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\ImportarDatosTiempoSQLServer" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{E161B864-B528-4B1C-9B7D-3F2035B28150}"
+      DTS:From="Package\ImportarDatosTiempoSQLServer"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\ImportarDatosProductoSQLServer" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{17410222-5078-423B-BEBE-CE29261C157C}"
+      DTS:From="Package\ImportarDatosAreaEnvioSQLServer"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 3"
+      DTS:To="Package\ImportarDatosClienteSQLServer" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{4A86F1C5-3B7E-4F08-A940-96EB4F4986EB}"
+      DTS:From="Package\ImportarDatosOfertasSQLServer"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 4"
+      DTS:To="Package\ImportarDatosAreaEnvioSQLServer" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{5952F687-B789-4B1D-8034-93B01DAF0206}"
+      DTS:From="Package\ImportarDatosClienteSQLServer"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 5"
+      DTS:To="Package\ImportarDatosEnvioSQLServer" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
 <!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
@@ -5825,39 +5816,231 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="254,42"
           Id="Package\ImportarDatosAreaEnvioSQLServer"
-          TopLeft="188,421" />
+          TopLeft="91,387" />
         <NodeLayout
           Size="237,42"
           Id="Package\ImportarDatosClienteSQLServer"
-          TopLeft="184,307" />
+          TopLeft="101,445" />
         <NodeLayout
           Size="231,42"
           Id="Package\ImportarDatosEnvioSQLServer"
-          TopLeft="189,539" />
+          TopLeft="455,441" />
         <NodeLayout
           Size="239,42"
           Id="Package\ImportarDatosOfertasSQLServer"
-          TopLeft="186,365" />
-        <NodeLayout
-          Size="243,42"
-          Id="Package\ImportarDatosPedidosSQLServer"
-          TopLeft="183,128" />
+          TopLeft="94,328" />
         <NodeLayout
           Size="247,42"
           Id="Package\ImportarDatosProductoSQLServer"
-          TopLeft="190,480" />
+          TopLeft="86,272" />
         <NodeLayout
           Size="240,42"
           Id="Package\ImportarDatosTiempoSQLServer"
-          TopLeft="170,246" />
+          TopLeft="94,213" />
         <NodeLayout
           Size="252,42"
           Id="Package\ImportarDatosUbicacionSQLServer"
-          TopLeft="181,187" />
+          TopLeft="82,152" />
+        <NodeLayout
+          Size="243,42"
+          Id="Package\ImportarDatosPedidosSQLServer"
+          TopLeft="83.5,97.8106712564544" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="83.5,118.810671256454">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-1.5,48.522662076879"
+              Start="0,0"
+              End="-9,48.522662076879">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-20,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-20,0"
+                    Point2="-24,0"
+                    Point3="-24,4" />
+                  <mssgle:LineSegment
+                    End="-24,44.522662076879" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-24,44.522662076879"
+                    Point2="-24,48.522662076879"
+                    Point3="-20,48.522662076879" />
+                  <mssgle:LineSegment
+                    End="-9,48.522662076879" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="82,178.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="12,55.3333333333333"
+              Start="0,0"
+              End="4.5,55.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.5,0"
+                    Point2="-22.5,0"
+                    Point3="-22.5,4" />
+                  <mssgle:LineSegment
+                    End="-22.5,51.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-22.5,51.3333333333333"
+                    Point2="-22.5,55.3333333333333"
+                    Point3="-18.5,55.3333333333333" />
+                  <mssgle:LineSegment
+                    End="4.5,55.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 4]"
+          TopLeft="94,349">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-3,59"
+              Start="0,0"
+              End="-10.5,59">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-21.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-21.5,0"
+                    Point2="-25.5,0"
+                    Point3="-25.5,4" />
+                  <mssgle:LineSegment
+                    End="-25.5,55" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-25.5,55"
+                    Point2="-25.5,59"
+                    Point3="-21.5,59" />
+                  <mssgle:LineSegment
+                    End="-10.5,59" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="334,234">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-1,59"
+              Start="0,0"
+              End="6.5,59">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5,0"
+                    Point2="22.5,0"
+                    Point3="22.5,4" />
+                  <mssgle:LineSegment
+                    End="22.5,55" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.5,55"
+                    Point2="22.5,59"
+                    Point3="18.5,59" />
+                  <mssgle:LineSegment
+                    End="6.5,59" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 3]"
+          TopLeft="91,413.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="10,52.3333333333333"
+              Start="0,0"
+              End="2.5,52.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.5,0"
+                    Point2="-22.5,0"
+                    Point3="-22.5,4" />
+                  <mssgle:LineSegment
+                    End="-22.5,48.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-22.5,48.3333333333333"
+                    Point2="-22.5,52.3333333333333"
+                    Point3="-18.5,52.3333333333333" />
+                  <mssgle:LineSegment
+                    End="2.5,52.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 5]"
+          TopLeft="338,464">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="117,0"
+              Start="0,0"
+              End="109.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="109.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -6069,107 +6252,90 @@
     design-time-name="Package\ImportarDatosEnvioSQLServer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="138,42"
           Id="Package\ImportarDatosEnvioSQLServer\Origen XML"
           TopLeft="102.5,133.5" />
         <NodeLayout
-          Size="177,42"
-          Id="Package\ImportarDatosEnvioSQLServer\OLE DB Destination"
-          TopLeft="410,280" />
-        <NodeLayout
-          Size="161,52"
+          Size="161,42"
           Id="Package\ImportarDatosEnvioSQLServer\Data Conversion"
-          TopLeft="199.5,222.5" />
+          TopLeft="259.5,214.5" />
         <EdgeLayout
           Id="Package\ImportarDatosEnvioSQLServer.Paths[FactTableEnvio]"
           TopLeft="171.5,175.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="108.5,47"
+              EndConnector="168.5,39"
               Start="0,0"
-              End="108.5,39.5">
+              End="168.5,31.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.5" />
+                    End="0,15.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.5"
-                    Point2="0,23.5"
-                    Point3="4,23.5" />
+                    Point1="0,15.5"
+                    Point2="0,19.5"
+                    Point3="4,19.5" />
                   <mssgle:LineSegment
-                    End="104.5,23.5" />
+                    End="164.5,19.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="104.5,23.5"
-                    Point2="108.5,23.5"
-                    Point3="108.5,27.5" />
+                    Point1="164.5,19.5"
+                    Point2="168.5,19.5"
+                    Point3="168.5,23.5" />
                   <mssgle:LineSegment
-                    End="108.5,39.5" />
+                    End="168.5,31.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\ImportarDatosEnvioSQLServer\OLE DB Destination"
+          TopLeft="379.5,289.5" />
         <EdgeLayout
           Id="Package\ImportarDatosEnvioSQLServer.Paths[Data Conversion Output]"
-          TopLeft="360.5,248.5">
+          TopLeft="340,256.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="49.5,52.5"
+              EndConnector="128,33"
               Start="0,0"
-              End="42,52.5">
+              End="128,25.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="20.75,0" />
+                    End="0,12.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="20.75,0"
-                    Point2="24.75,0"
-                    Point3="24.75,4" />
+                    Point1="0,12.5"
+                    Point2="0,16.5"
+                    Point3="4,16.5" />
                   <mssgle:LineSegment
-                    End="24.75,48.5" />
+                    End="124,16.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="24.75,48.5"
-                    Point2="24.75,52.5"
-                    Point3="28.75,52.5" />
+                    Point1="124,16.5"
+                    Point2="128,16.5"
+                    Point3="128,20.5" />
                   <mssgle:LineSegment
-                    End="42,52.5" />
+                    End="128,25.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\ImportarDatosEnvioSQLServer\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\ImportarDatosOfertasSQLServer">
     <LayoutInfo>
@@ -6275,94 +6441,6 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\ImportarDatosPedidosSQLServer">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="138,42"
-          Id="Package\ImportarDatosPedidosSQLServer\Origen XML"
-          TopLeft="115.5,101.5" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\ImportarDatosPedidosSQLServer\Data Conversion"
-          TopLeft="206.5,178.5" />
-        <EdgeLayout
-          Id="Package\ImportarDatosPedidosSQLServer.Paths[DimensionPedido]"
-          TopLeft="184.5,143.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="102.5,35"
-              Start="0,0"
-              End="102.5,27.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,13.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13.5"
-                    Point2="0,17.5"
-                    Point3="4,17.5" />
-                  <mssgle:LineSegment
-                    End="98.5,17.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="98.5,17.5"
-                    Point2="102.5,17.5"
-                    Point3="102.5,21.5" />
-                  <mssgle:LineSegment
-                    End="102.5,27.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\ImportarDatosPedidosSQLServer\OLE DB Destination"
-          TopLeft="301.5,268.5" />
-        <EdgeLayout
-          Id="Package\ImportarDatosPedidosSQLServer.Paths[Data Conversion Output]"
-          TopLeft="287,220.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="103,48"
-              Start="0,0"
-              End="103,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20"
-                    Point2="0,24"
-                    Point3="4,24" />
-                  <mssgle:LineSegment
-                    End="99,24" />
-                  <mssgle:CubicBezierSegment
-                    Point1="99,24"
-                    Point2="103,24"
-                    Point3="103,28" />
-                  <mssgle:LineSegment
-                    End="103,40.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <TaskHost
     design-time-name="Package\ImportarDatosProductoSQLServer">
     <LayoutInfo>
@@ -6666,8 +6744,109 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\ImportarDatosPedidosSQLServer">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="138,42"
+          Id="Package\ImportarDatosPedidosSQLServer\Origen XML"
+          TopLeft="156.5,85.5" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\ImportarDatosPedidosSQLServer\OLE DB Destination"
+          TopLeft="424.5,287.5" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\ImportarDatosPedidosSQLServer\Data Conversion"
+          TopLeft="253.5,187.5" />
+        <EdgeLayout
+          Id="Package\ImportarDatosPedidosSQLServer.Paths[DimensionPedido]"
+          TopLeft="225.5,127.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="108.5,60"
+              Start="0,0"
+              End="108.5,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="104.5,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="104.5,30"
+                    Point2="108.5,30"
+                    Point3="108.5,34" />
+                  <mssgle:LineSegment
+                    End="108.5,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ImportarDatosPedidosSQLServer.Paths[Data Conversion Output]"
+          TopLeft="334,229.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="179,58"
+              Start="0,0"
+              End="179,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25"
+                    Point2="0,29"
+                    Point3="4,29" />
+                  <mssgle:LineSegment
+                    End="175,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="175,29"
+                    Point2="179,29"
+                    Point3="179,33" />
+                  <mssgle:LineSegment
+                    End="179,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\ImportarDatosPedidosSQLServer\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ImportarDatosEnvioSQLServer\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

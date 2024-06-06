@@ -11,8 +11,8 @@
   DTS:LocaleID="19466"
   DTS:ObjectName="createTablesBD"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{BDE43415-49BF-4F96-8FB8-C2E3BA9A9EF7}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{BF4CC614-E5B7-43AC-B91C-36E0E6A0CA56}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -88,7 +88,7 @@
         <NodeLayout
           Size="176,42"
           Id="Package\Tarea Ejecutar SQL"
-          TopLeft="242.5,103.5" />
+          TopLeft="260.5,132.5" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
