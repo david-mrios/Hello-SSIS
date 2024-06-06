@@ -5989,7 +5989,7 @@
         <MetodoEnvio>Standard Shipping</MetodoEnvio>
     </FactTableEnvio>
     <FactTableEnvio>
-        <EnviosID>500</EnviosID>
+        <EnviosID>500</EnviosID>        
         <PedidoId>135</PedidoId>
         <OfertasId>4</OfertasId>
         <AreaEnvioId>1</AreaEnvioId>
