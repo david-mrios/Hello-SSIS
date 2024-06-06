@@ -11,8 +11,8 @@
   DTS:LocaleID="19466"
   DTS:ObjectName="ImportarXMLFilePedidos"
   DTS:PackageType="5"
-  DTS:VersionBuild="68"
-  DTS:VersionGUID="{B4735222-A087-40EF-A39E-CCE1CDD32E6D}">
+  DTS:VersionBuild="71"
+  DTS:VersionGUID="{C7EDF99A-4F0E-47E2-8C87-46874F588312}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -323,7 +323,7 @@
                   dataType="System.String"
                   description="Datos XML que usa el adaptador de origen XML."
                   expressionType="Notify"
-                  name="XMLData">D:\Documentos\Repositorios\Hello-SSIS\data\AreaEnvio.xml</property>
+                  name="XMLData">C:\Users\David\Documents\Local\Hello-SSIS\data\AreaEnvio.xml</property>
                 <property
                   dataType="System.String"
                   description="Variable que usa el adaptador de origen XML para especificar datos XML."
@@ -336,7 +336,7 @@
                   dataType="System.String"
                   description="Definición de esquema XML que usa el adaptador de origen XML."
                   expressionType="Notify"
-                  name="XMLSchemaDefinition">D:\Documentos\Repositorios\Hello-SSIS\data\AreaEnvio.xsd</property>
+                  name="XMLSchemaDefinition">C:\Users\David\Documents\Local\Hello-SSIS\data\AreaEnvio.xsd</property>
                 <property
                   dataType="System.Boolean"
                   description="Identifica si se usará el esquema insertado."
@@ -1141,7 +1141,7 @@
                   dataType="System.String"
                   description="Datos XML que usa el adaptador de origen XML."
                   expressionType="Notify"
-                  name="XMLData">D:\Documentos\Repositorios\Hello-SSIS\data\Cliente.xml</property>
+                  name="XMLData">C:\Users\David\Documents\Local\Hello-SSIS\data\Cliente.xml</property>
                 <property
                   dataType="System.String"
                   description="Variable que usa el adaptador de origen XML para especificar datos XML."
@@ -1154,7 +1154,7 @@
                   dataType="System.String"
                   description="Definición de esquema XML que usa el adaptador de origen XML."
                   expressionType="Notify"
-                  name="XMLSchemaDefinition">D:\Documentos\Repositorios\Hello-SSIS\data\Cliente.xsd</property>
+                  name="XMLSchemaDefinition">C:\Users\David\Documents\Local\Hello-SSIS\data\Cliente.xsd</property>
                 <property
                   dataType="System.Boolean"
                   description="Identifica si se usará el esquema insertado."
@@ -1622,6 +1622,7 @@
       DTS:refId="Package\ImportarDatosEnvioSQLServer"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{7598a5fa-7ef5-4560-aeb0-f8da345b5a17}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -2551,6 +2552,7 @@
       DTS:refId="Package\ImportarDatosOfertasSQLServer"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{d1c23110-ac08-4806-b1a3-4474cd49c322}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -3270,6 +3272,7 @@
       DTS:refId="Package\ImportarDatosPedidosSQLServer"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{897DD917-92BD-4198-9002-3D44E89C6887}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -4051,6 +4054,7 @@
       DTS:refId="Package\ImportarDatosProductoSQLServer"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{a8c3d46a-0972-4722-8fee-527b23a3ff91}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -4782,6 +4786,7 @@
       DTS:refId="Package\ImportarDatosTiempoSQLServer"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{dfa81206-b1ab-493c-aa27-573c77469733}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -5410,6 +5415,7 @@
       DTS:refId="Package\ImportarDatosUbicacionSQLServer"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{d1fb35b6-302b-4748-8631-c9c429beb46e}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -6046,7 +6052,7 @@
     design-time-name="Package\ImportarDatosAreaEnvioSQLServer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="138,42"
           Id="Package\ImportarDatosAreaEnvioSQLServer\Origen XML"
@@ -6084,9 +6090,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6120,9 +6124,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6145,7 +6147,7 @@
     design-time-name="Package\ImportarDatosClienteSQLServer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="161,42"
           Id="Package\ImportarDatosClienteSQLServer\Data Conversion"
@@ -6189,9 +6191,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6225,9 +6225,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6250,7 +6248,7 @@
     design-time-name="Package\ImportarDatosEnvioSQLServer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="138,42"
           Id="Package\ImportarDatosEnvioSQLServer\Origen XML"
@@ -6294,7 +6292,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6328,12 +6328,27 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ImportarDatosEnvioSQLServer\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\ImportarDatosOfertasSQLServer">
     <LayoutInfo>
@@ -6836,19 +6851,6 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\ImportarDatosUbicacionSQLServer\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ImportarDatosEnvioSQLServer\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

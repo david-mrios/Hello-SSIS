@@ -45,4 +45,14 @@
         <NombreArea>Masaya</NombreArea>
         <CostoEnvio>167.4</CostoEnvio>
     </DimensionAreaEnvio>
+    <DimensionAreaEnvio>
+        <AreaEnviold>10</AreaEnviold>
+        <NombreArea>Juigalpa</NombreArea>
+        <CostoEnvio>200.5</CostoEnvio>
+    </DimensionAreaEnvio>
+    <DimensionAreaEnvio>
+        <AreaEnviold>11</AreaEnviold>
+        <NombreArea>Jinotega</NombreArea>
+        <CostoEnvio>235.8</CostoEnvio>
+    </DimensionAreaEnvio>
 </AreaEnvio>

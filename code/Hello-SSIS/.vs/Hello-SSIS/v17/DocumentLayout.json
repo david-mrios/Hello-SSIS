@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Documentos\\Repositorios\\Hello-SSIS\\code\\Hello-SSIS\\",
+  "WorkspaceRootPath": "C:\\Users\\David\\Documents\\Local\\Hello-SSIS\\code\\Hello-SSIS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECD364BF-3ECF-446A-A2F5-542BD7D72125}|Hello-SSIS\\Hello-SSIS.dtproj|D:\\Documentos\\Repositorios\\Hello-SSIS\\code\\Hello-SSIS\\Hello-SSIS\\ImportarXMLFile.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "AbsoluteMoniker": "D:0:0:{ECD364BF-3ECF-446A-A2F5-542BD7D72125}|Hello-SSIS\\Hello-SSIS.dtproj|C:\\Users\\David\\Documents\\Local\\Hello-SSIS\\code\\Hello-SSIS\\Hello-SSIS\\ImportarXMLFile.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{ECD364BF-3ECF-446A-A2F5-542BD7D72125}|Hello-SSIS\\Hello-SSIS.dtproj|solutionrelative:Hello-SSIS\\ImportarXMLFile.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD364BF-3ECF-446A-A2F5-542BD7D72125}|Hello-SSIS\\Hello-SSIS.dtproj|D:\\Documentos\\Repositorios\\Hello-SSIS\\code\\Hello-SSIS\\Hello-SSIS\\createTablesBD.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "AbsoluteMoniker": "D:0:0:{ECD364BF-3ECF-446A-A2F5-542BD7D72125}|Hello-SSIS\\Hello-SSIS.dtproj|C:\\Users\\David\\Documents\\Local\\Hello-SSIS\\code\\Hello-SSIS\\Hello-SSIS\\createTablesBD.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{ECD364BF-3ECF-446A-A2F5-542BD7D72125}|Hello-SSIS\\Hello-SSIS.dtproj|solutionrelative:Hello-SSIS\\createTablesBD.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
@@ -32,10 +32,10 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ImportarXMLFile.dtsx [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Documentos\\Repositorios\\Hello-SSIS\\code\\Hello-SSIS\\Hello-SSIS\\ImportarXMLFile.dtsx",
+              "DocumentMoniker": "C:\\Users\\David\\Documents\\Local\\Hello-SSIS\\code\\Hello-SSIS\\Hello-SSIS\\ImportarXMLFile.dtsx",
               "RelativeDocumentMoniker": "Hello-SSIS\\ImportarXMLFile.dtsx",
-              "ToolTip": "D:\\Documentos\\Repositorios\\Hello-SSIS\\code\\Hello-SSIS\\Hello-SSIS\\ImportarXMLFile.dtsx [Dise\u00F1o]",
-              "RelativeToolTip": "Hello-SSIS\\ImportarXMLFile.dtsx [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\David\\Documents\\Local\\Hello-SSIS\\code\\Hello-SSIS\\Hello-SSIS\\ImportarXMLFile.dtsx [Dise\u00F1o]*",
+              "RelativeToolTip": "Hello-SSIS\\ImportarXMLFile.dtsx [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2024-05-26T05:20:53.475Z",
               "EditorCaption": " [Dise\u00F1o]"
@@ -44,9 +44,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "createTablesBD.dtsx [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Documentos\\Repositorios\\Hello-SSIS\\code\\Hello-SSIS\\Hello-SSIS\\createTablesBD.dtsx",
+              "DocumentMoniker": "C:\\Users\\David\\Documents\\Local\\Hello-SSIS\\code\\Hello-SSIS\\Hello-SSIS\\createTablesBD.dtsx",
               "RelativeDocumentMoniker": "Hello-SSIS\\createTablesBD.dtsx",
-              "ToolTip": "D:\\Documentos\\Repositorios\\Hello-SSIS\\code\\Hello-SSIS\\Hello-SSIS\\createTablesBD.dtsx [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\David\\Documents\\Local\\Hello-SSIS\\code\\Hello-SSIS\\Hello-SSIS\\createTablesBD.dtsx [Dise\u00F1o]",
               "RelativeToolTip": "Hello-SSIS\\createTablesBD.dtsx [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2024-05-30T08:16:48.79Z",
