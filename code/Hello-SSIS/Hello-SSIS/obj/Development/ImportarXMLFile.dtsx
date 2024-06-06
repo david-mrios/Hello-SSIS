@@ -11,8 +11,8 @@
   DTS:LocaleID="19466"
   DTS:ObjectName="ImportarXMLFilePedidos"
   DTS:PackageType="5"
-  DTS:VersionBuild="75"
-  DTS:VersionGUID="{72620842-924F-4CC2-89C1-D4036B4E304F}">
+  DTS:VersionBuild="80"
+  DTS:VersionGUID="{A2F5EA76-ED99-41D2-9BB7-1B3D8CB7EC3E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2432,7 +2432,6 @@
       DTS:refId="Package\ImportarDatosOfertasSQLServer"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{d1c23110-ac08-4806-b1a3-4474cd49c322}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -2853,7 +2852,7 @@
                   dataType="System.String"
                   description="Datos XML que usa el adaptador de origen XML."
                   expressionType="Notify"
-                  name="XMLData">D:\Documentos\Repositorios\Hello-SSIS\data\Ofertas.xml</property>
+                  name="XMLData">C:\Users\David\Documents\Local\Hello-SSIS\data\Ofertas.xml</property>
                 <property
                   dataType="System.String"
                   description="Variable que usa el adaptador de origen XML para especificar datos XML."
@@ -2866,7 +2865,7 @@
                   dataType="System.String"
                   description="Definición de esquema XML que usa el adaptador de origen XML."
                   expressionType="Notify"
-                  name="XMLSchemaDefinition">D:\Documentos\Repositorios\Hello-SSIS\data\Ofertas.xsd</property>
+                  name="XMLSchemaDefinition">C:\Users\David\Documents\Local\Hello-SSIS\data\Ofertas.xsd</property>
                 <property
                   dataType="System.Boolean"
                   description="Identifica si se usará el esquema insertado."
@@ -3934,7 +3933,6 @@
       DTS:refId="Package\ImportarDatosProductoSQLServer"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{a8c3d46a-0972-4722-8fee-527b23a3ff91}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -4363,7 +4361,7 @@
                   dataType="System.String"
                   description="Datos XML que usa el adaptador de origen XML."
                   expressionType="Notify"
-                  name="XMLData">D:\Documentos\Repositorios\Hello-SSIS\data\Producto.xml</property>
+                  name="XMLData">C:\Users\David\Documents\Local\Hello-SSIS\data\Producto.xml</property>
                 <property
                   dataType="System.String"
                   description="Variable que usa el adaptador de origen XML para especificar datos XML."
@@ -4376,7 +4374,7 @@
                   dataType="System.String"
                   description="Definición de esquema XML que usa el adaptador de origen XML."
                   expressionType="Notify"
-                  name="XMLSchemaDefinition">D:\Documentos\Repositorios\Hello-SSIS\data\Producto.xsd</property>
+                  name="XMLSchemaDefinition">C:\Users\David\Documents\Local\Hello-SSIS\data\Producto.xsd</property>
                 <property
                   dataType="System.Boolean"
                   description="Identifica si se usará el esquema insertado."
@@ -6220,7 +6218,7 @@
     design-time-name="Package\ImportarDatosOfertasSQLServer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="138,42"
           Id="Package\ImportarDatosOfertasSQLServer\Origen XML"
@@ -6264,9 +6262,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6300,9 +6296,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6430,7 +6424,7 @@
     design-time-name="Package\ImportarDatosProductoSQLServer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="138,42"
           Id="Package\ImportarDatosProductoSQLServer\Origen XML"
@@ -6474,9 +6468,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6510,9 +6502,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

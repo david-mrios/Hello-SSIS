@@ -2,92 +2,452 @@
 <Producto>
     <DimensionProducto>
         <ProductoId>1</ProductoId>
-        <Nombre>smartphone</Nombre>
-        <FechaAgregado>2023-02-25</FechaAgregado>
-        <Dimensiones>15x10x5</Dimensiones>
-        <Peso>346.17</Peso>
-        <Nombrecategoria>GizmoGalaxy</Nombrecategoria>
-        <NombreMarca>Sony</NombreMarca>
-    </DimensionProducto>
-    <DimensionProducto>
-        <ProductoId>2</ProductoId>
-        <Nombre>laptop</Nombre>
-        <FechaAgregado>2022-12-07</FechaAgregado>
-        <Dimensiones>8x8x8</Dimensiones>
-        <Peso>8722.95</Peso>
-        <Nombrecategoria>DigitalDreams</Nombrecategoria>
-        <NombreMarca>Samsung</NombreMarca>
-    </DimensionProducto>
-    <DimensionProducto>
-        <ProductoId>3</ProductoId>
-        <Nombre>headphones</Nombre>
-        <FechaAgregado>2023-10-10</FechaAgregado>
-        <Dimensiones>12x6x4</Dimensiones>
-        <Peso>3403.99</Peso>
-        <Nombrecategoria>GadgetZone</Nombrecategoria>
-        <NombreMarca>Sony</NombreMarca>
-    </DimensionProducto>
-    <DimensionProducto>
-        <ProductoId>4</ProductoId>
-        <Nombre>smartphone</Nombre>
-        <FechaAgregado>2023-01-30</FechaAgregado>
-        <Dimensiones>8x8x8</Dimensiones>
-        <Peso>9570.71</Peso>
-        <Nombrecategoria>InnoTech</Nombrecategoria>
-        <NombreMarca>HP</NombreMarca>
-    </DimensionProducto>
-    <DimensionProducto>
-        <ProductoId>5</ProductoId>
-        <Nombre>virtual reality headset</Nombre>
-        <FechaAgregado>2022-06-13</FechaAgregado>
-        <Dimensiones>8x8x8</Dimensiones>
-        <Peso>595.65</Peso>
-        <Nombrecategoria>ElectroWorld</Nombrecategoria>
-        <NombreMarca>LG</NombreMarca>
-    </DimensionProducto>
-    <DimensionProducto>
-        <ProductoId>6</ProductoId>
-        <Nombre>laptop</Nombre>
-        <FechaAgregado>2022-11-14</FechaAgregado>
-        <Dimensiones>10x5x3</Dimensiones>
-        <Peso>5821.57</Peso>
-        <Nombrecategoria>ElectroWorld</Nombrecategoria>
+        <Nombre>Wireless Charger Swift</Nombre>
+        <FechaAgregado>2022-08-24</FechaAgregado>
+        <Dimensiones>20x10x5</Dimensiones>
+        <Peso>1203.66</Peso>
+        <Nombrecategoria>smartphones</Nombrecategoria>
         <NombreMarca>Acer</NombreMarca>
     </DimensionProducto>
     <DimensionProducto>
-        <ProductoId>7</ProductoId>
-        <Nombre>portable charger</Nombre>
-        <FechaAgregado>2022-12-26</FechaAgregado>
-        <Dimensiones>8x8x8</Dimensiones>
-        <Peso>5246.84</Peso>
-        <Nombrecategoria>TechWiz</Nombrecategoria>
-        <NombreMarca>Sony</NombreMarca>
-    </DimensionProducto>
-    <DimensionProducto>
-        <ProductoId>8</ProductoId>
-        <Nombre>smart home device</Nombre>
-        <FechaAgregado>2023-07-30</FechaAgregado>
+        <ProductoId>2</ProductoId>
+        <Nombre>Gaming Keyboard RGB</Nombre>
+        <FechaAgregado>2023-02-20</FechaAgregado>
         <Dimensiones>12x6x4</Dimensiones>
-        <Peso>4140.23</Peso>
-        <Nombrecategoria>ElectroWorld</Nombrecategoria>
-        <NombreMarca>Microsoft</NombreMarca>
-    </DimensionProducto>
-    <DimensionProducto>
-        <ProductoId>9</ProductoId>
-        <Nombre>smartphone</Nombre>
-        <FechaAgregado>2022-12-26</FechaAgregado>
-        <Dimensiones>10x5x3</Dimensiones>
-        <Peso>1137.12</Peso>
-        <Nombrecategoria>ElectroGuru</Nombrecategoria>
+        <Peso>2312.28</Peso>
+        <Nombrecategoria>smartphones</Nombrecategoria>
         <NombreMarca>Lenovo</NombreMarca>
     </DimensionProducto>
     <DimensionProducto>
+        <ProductoId>3</ProductoId>
+        <Nombre>Smart Home Hub Connect</Nombre>
+        <FechaAgregado>2021-02-22</FechaAgregado>
+        <Dimensiones>7x7x7</Dimensiones>
+        <Peso>1500.47</Peso>
+        <Nombrecategoria>smartphones</Nombrecategoria>
+        <NombreMarca>LG</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>4</ProductoId>
+        <Nombre>Wireless Mouse Precision</Nombre>
+        <FechaAgregado>2022-01-07</FechaAgregado>
+        <Dimensiones>7x7x7</Dimensiones>
+        <Peso>341.72</Peso>
+        <Nombrecategoria>laptops</Nombrecategoria>
+        <NombreMarca>Microsoft</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>5</ProductoId>
+        <Nombre>Smart Scale Body</Nombre>
+        <FechaAgregado>2022-06-29</FechaAgregado>
+        <Dimensiones>12x6x4</Dimensiones>
+        <Peso>4430.54</Peso>
+        <Nombrecategoria>headphones</Nombrecategoria>
+        <NombreMarca>Samsung</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>6</ProductoId>
+        <Nombre>Wireless Keyboard Slim</Nombre>
+        <FechaAgregado>2021-07-26</FechaAgregado>
+        <Dimensiones>15x8x2</Dimensiones>
+        <Peso>4169.88</Peso>
+        <Nombrecategoria>laptops</Nombrecategoria>
+        <NombreMarca>Samsung</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>7</ProductoId>
+        <Nombre>Robot Vacuum CleanPro</Nombre>
+        <FechaAgregado>2022-12-01</FechaAgregado>
+        <Dimensiones>20x10x5</Dimensiones>
+        <Peso>1833.67</Peso>
+        <Nombrecategoria>smartwatches</Nombrecategoria>
+        <NombreMarca>Asus</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>8</ProductoId>
+        <Nombre>Keyboard Mechanical</Nombre>
+        <FechaAgregado>2022-08-07</FechaAgregado>
+        <Dimensiones>7x7x7</Dimensiones>
+        <Peso>4077.2</Peso>
+        <Nombrecategoria>headphones</Nombrecategoria>
+        <NombreMarca>Samsung</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>9</ProductoId>
+        <Nombre>Wireless Earbuds Sport</Nombre>
+        <FechaAgregado>2021-04-25</FechaAgregado>
+        <Dimensiones>20x10x5</Dimensiones>
+        <Peso>715.17</Peso>
+        <Nombrecategoria>laptops</Nombrecategoria>
+        <NombreMarca>Apple</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
         <ProductoId>10</ProductoId>
-        <Nombre>virtual reality headset</Nombre>
-        <FechaAgregado>2023-09-13</FechaAgregado>
-        <Dimensiones>8x8x8</Dimensiones>
-        <Peso>2982.03</Peso>
-        <Nombrecategoria>InnoTech</Nombrecategoria>
+        <Nombre>Keyboard Mechanical</Nombre>
+        <FechaAgregado>2021-02-24</FechaAgregado>
+        <Dimensiones>10x5x3</Dimensiones>
+        <Peso>313.14</Peso>
+        <Nombrecategoria>headphones</Nombrecategoria>
+        <NombreMarca>Microsoft</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>11</ProductoId>
+        <Nombre>Smart Pen Write</Nombre>
+        <FechaAgregado>2022-08-07</FechaAgregado>
+        <Dimensiones>15x8x2</Dimensiones>
+        <Peso>4602.06</Peso>
+        <Nombrecategoria>laptops</Nombrecategoria>
+        <NombreMarca>Acer</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>12</ProductoId>
+        <Nombre>Printer All-in-One</Nombre>
+        <FechaAgregado>2021-03-21</FechaAgregado>
+        <Dimensiones>15x8x2</Dimensiones>
+        <Peso>466.6</Peso>
+        <Nombrecategoria>smartphones</Nombrecategoria>
+        <NombreMarca>Lenovo</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>13</ProductoId>
+        <Nombre>Smart Thermostat Eco</Nombre>
+        <FechaAgregado>2023-01-11</FechaAgregado>
+        <Dimensiones>15x8x2</Dimensiones>
+        <Peso>3016.01</Peso>
+        <Nombrecategoria>smartwatches</Nombrecategoria>
+        <NombreMarca>Samsung</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>14</ProductoId>
+        <Nombre>Robot Vacuum CleanPro</Nombre>
+        <FechaAgregado>2021-12-19</FechaAgregado>
+        <Dimensiones>20x10x5</Dimensiones>
+        <Peso>4754.91</Peso>
+        <Nombrecategoria>headphones</Nombrecategoria>
+        <NombreMarca>Lenovo</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>15</ProductoId>
+        <Nombre>VR Headset Xperience</Nombre>
+        <FechaAgregado>2022-02-22</FechaAgregado>
+        <Dimensiones>12x6x4</Dimensiones>
+        <Peso>190.72</Peso>
+        <Nombrecategoria>laptops</Nombrecategoria>
         <NombreMarca>HP</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>16</ProductoId>
+        <Nombre>Wireless Charger Swift</Nombre>
+        <FechaAgregado>2022-01-27</FechaAgregado>
+        <Dimensiones>20x10x5</Dimensiones>
+        <Peso>4009.32</Peso>
+        <Nombrecategoria>tablets</Nombrecategoria>
+        <NombreMarca>Apple</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>17</ProductoId>
+        <Nombre>Mini Drone Nano</Nombre>
+        <FechaAgregado>2022-09-21</FechaAgregado>
+        <Dimensiones>7x7x7</Dimensiones>
+        <Peso>2047.04</Peso>
+        <Nombrecategoria>smartphones</Nombrecategoria>
+        <NombreMarca>Lenovo</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>18</ProductoId>
+        <Nombre>Smart Light Bulb Glow</Nombre>
+        <FechaAgregado>2022-03-17</FechaAgregado>
+        <Dimensiones>12x6x4</Dimensiones>
+        <Peso>1393.68</Peso>
+        <Nombrecategoria>tablets</Nombrecategoria>
+        <NombreMarca>Sony</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>19</ProductoId>
+        <Nombre>Security Camera Watchdog</Nombre>
+        <FechaAgregado>2022-12-20</FechaAgregado>
+        <Dimensiones>7x7x7</Dimensiones>
+        <Peso>4677.47</Peso>
+        <Nombrecategoria>headphones</Nombrecategoria>
+        <NombreMarca>Samsung</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>20</ProductoId>
+        <Nombre>Wireless Charger Swift</Nombre>
+        <FechaAgregado>2021-11-22</FechaAgregado>
+        <Dimensiones>12x6x4</Dimensiones>
+        <Peso>1858.51</Peso>
+        <Nombrecategoria>headphones</Nombrecategoria>
+        <NombreMarca>Sony</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>21</ProductoId>
+        <Nombre>Smart Plug Control</Nombre>
+        <FechaAgregado>2022-05-02</FechaAgregado>
+        <Dimensiones>20x10x5</Dimensiones>
+        <Peso>2656.66</Peso>
+        <Nombrecategoria>smartphones</Nombrecategoria>
+        <NombreMarca>Acer</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>22</ProductoId>
+        <Nombre>Smart Mirror Reflect</Nombre>
+        <FechaAgregado>2021-01-13</FechaAgregado>
+        <Dimensiones>12x6x4</Dimensiones>
+        <Peso>1736.45</Peso>
+        <Nombrecategoria>tablets</Nombrecategoria>
+        <NombreMarca>Acer</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>23</ProductoId>
+        <Nombre>Wireless Earbuds Sport</Nombre>
+        <FechaAgregado>2021-11-26</FechaAgregado>
+        <Dimensiones>7x7x7</Dimensiones>
+        <Peso>557.78</Peso>
+        <Nombrecategoria>headphones</Nombrecategoria>
+        <NombreMarca>HP</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>24</ProductoId>
+        <Nombre>Bluetooth Speaker Bass</Nombre>
+        <FechaAgregado>2021-10-23</FechaAgregado>
+        <Dimensiones>12x6x4</Dimensiones>
+        <Peso>4531.42</Peso>
+        <Nombrecategoria>smartwatches</Nombrecategoria>
+        <NombreMarca>Samsung</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>25</ProductoId>
+        <Nombre>Smart Pen Write</Nombre>
+        <FechaAgregado>2022-12-21</FechaAgregado>
+        <Dimensiones>20x10x5</Dimensiones>
+        <Peso>404.97</Peso>
+        <Nombrecategoria>tablets</Nombrecategoria>
+        <NombreMarca>Samsung</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>26</ProductoId>
+        <Nombre>Bluetooth Earbuds Air</Nombre>
+        <FechaAgregado>2021-01-27</FechaAgregado>
+        <Dimensiones>15x8x2</Dimensiones>
+        <Peso>7.54</Peso>
+        <Nombrecategoria>smartwatches</Nombrecategoria>
+        <NombreMarca>HP</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>27</ProductoId>
+        <Nombre>Wireless Router Turbo</Nombre>
+        <FechaAgregado>2021-12-06</FechaAgregado>
+        <Dimensiones>10x5x3</Dimensiones>
+        <Peso>2603.61</Peso>
+        <Nombrecategoria>smartphones</Nombrecategoria>
+        <NombreMarca>Acer</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>28</ProductoId>
+        <Nombre>Bluetooth Earbuds Air</Nombre>
+        <FechaAgregado>2022-06-23</FechaAgregado>
+        <Dimensiones>20x10x5</Dimensiones>
+        <Peso>1989.66</Peso>
+        <Nombrecategoria>smartwatches</Nombrecategoria>
+        <NombreMarca>Apple</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>29</ProductoId>
+        <Nombre>Noise Cancelling Headphones Zen</Nombre>
+        <FechaAgregado>2022-05-16</FechaAgregado>
+        <Dimensiones>10x5x3</Dimensiones>
+        <Peso>4344.31</Peso>
+        <Nombrecategoria>headphones</Nombrecategoria>
+        <NombreMarca>Apple</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>30</ProductoId>
+        <Nombre>Gaming Keyboard RGB</Nombre>
+        <FechaAgregado>2022-09-07</FechaAgregado>
+        <Dimensiones>7x7x7</Dimensiones>
+        <Peso>1529.33</Peso>
+        <Nombrecategoria>tablets</Nombrecategoria>
+        <NombreMarca>Apple</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>31</ProductoId>
+        <Nombre>Wireless Presenter Click</Nombre>
+        <FechaAgregado>2022-07-18</FechaAgregado>
+        <Dimensiones>15x8x2</Dimensiones>
+        <Peso>4031.56</Peso>
+        <Nombrecategoria>headphones</Nombrecategoria>
+        <NombreMarca>HP</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>32</ProductoId>
+        <Nombre>Car Dash Cam Drive</Nombre>
+        <FechaAgregado>2022-01-11</FechaAgregado>
+        <Dimensiones>20x10x5</Dimensiones>
+        <Peso>2458.37</Peso>
+        <Nombrecategoria>tablets</Nombrecategoria>
+        <NombreMarca>Lenovo</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>33</ProductoId>
+        <Nombre>Robot Vacuum CleanPro</Nombre>
+        <FechaAgregado>2022-02-22</FechaAgregado>
+        <Dimensiones>20x10x5</Dimensiones>
+        <Peso>2339.87</Peso>
+        <Nombrecategoria>tablets</Nombrecategoria>
+        <NombreMarca>HP</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>34</ProductoId>
+        <Nombre>Wireless Keyboard Slim</Nombre>
+        <FechaAgregado>2020-11-16</FechaAgregado>
+        <Dimensiones>12x6x4</Dimensiones>
+        <Peso>3100.12</Peso>
+        <Nombrecategoria>headphones</Nombrecategoria>
+        <NombreMarca>Acer</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>35</ProductoId>
+        <Nombre>Smartphone X1</Nombre>
+        <FechaAgregado>2021-03-28</FechaAgregado>
+        <Dimensiones>12x6x4</Dimensiones>
+        <Peso>2883.67</Peso>
+        <Nombrecategoria>smartphones</Nombrecategoria>
+        <NombreMarca>Apple</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>36</ProductoId>
+        <Nombre>Bluetooth Earbuds Air</Nombre>
+        <FechaAgregado>2021-11-15</FechaAgregado>
+        <Dimensiones>7x7x7</Dimensiones>
+        <Peso>300.11</Peso>
+        <Nombrecategoria>smartphones</Nombrecategoria>
+        <NombreMarca>Sony</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>37</ProductoId>
+        <Nombre>Gaming Console Ultra</Nombre>
+        <FechaAgregado>2020-12-24</FechaAgregado>
+        <Dimensiones>15x8x2</Dimensiones>
+        <Peso>1491.74</Peso>
+        <Nombrecategoria>tablets</Nombrecategoria>
+        <NombreMarca>Acer</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>38</ProductoId>
+        <Nombre>Gaming Desk Setup</Nombre>
+        <FechaAgregado>2022-06-10</FechaAgregado>
+        <Dimensiones>15x8x2</Dimensiones>
+        <Peso>2320.67</Peso>
+        <Nombrecategoria>smartphones</Nombrecategoria>
+        <NombreMarca>Lenovo</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>39</ProductoId>
+        <Nombre>Fitness Tracker FitPro</Nombre>
+        <FechaAgregado>2022-10-03</FechaAgregado>
+        <Dimensiones>10x5x3</Dimensiones>
+        <Peso>1173.31</Peso>
+        <Nombrecategoria>tablets</Nombrecategoria>
+        <NombreMarca>Acer</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>40</ProductoId>
+        <Nombre>Gaming Mouse Speedy</Nombre>
+        <FechaAgregado>2020-12-16</FechaAgregado>
+        <Dimensiones>20x10x5</Dimensiones>
+        <Peso>1890.07</Peso>
+        <Nombrecategoria>laptops</Nombrecategoria>
+        <NombreMarca>Lenovo</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>41</ProductoId>
+        <Nombre>Keyboard Mechanical</Nombre>
+        <FechaAgregado>2020-10-09</FechaAgregado>
+        <Dimensiones>15x8x2</Dimensiones>
+        <Peso>1471.74</Peso>
+        <Nombrecategoria>tablets</Nombrecategoria>
+        <NombreMarca>Asus</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>42</ProductoId>
+        <Nombre>Smart Plug Control</Nombre>
+        <FechaAgregado>2022-02-16</FechaAgregado>
+        <Dimensiones>15x8x2</Dimensiones>
+        <Peso>3530.62</Peso>
+        <Nombrecategoria>tablets</Nombrecategoria>
+        <NombreMarca>Asus</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>43</ProductoId>
+        <Nombre>Wireless Router Turbo</Nombre>
+        <FechaAgregado>2020-10-29</FechaAgregado>
+        <Dimensiones>7x7x7</Dimensiones>
+        <Peso>3648.29</Peso>
+        <Nombrecategoria>smartphones</Nombrecategoria>
+        <NombreMarca>Microsoft</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>44</ProductoId>
+        <Nombre>Smart Glasses Vision</Nombre>
+        <FechaAgregado>2020-11-10</FechaAgregado>
+        <Dimensiones>10x5x3</Dimensiones>
+        <Peso>2124.95</Peso>
+        <Nombrecategoria>tablets</Nombrecategoria>
+        <NombreMarca>Acer</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>45</ProductoId>
+        <Nombre>Keyboard Mechanical</Nombre>
+        <FechaAgregado>2022-08-10</FechaAgregado>
+        <Dimensiones>12x6x4</Dimensiones>
+        <Peso>1239.76</Peso>
+        <Nombrecategoria>laptops</Nombrecategoria>
+        <NombreMarca>Acer</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>46</ProductoId>
+        <Nombre>Smart Lock Secure</Nombre>
+        <FechaAgregado>2023-02-28</FechaAgregado>
+        <Dimensiones>20x10x5</Dimensiones>
+        <Peso>2481.17</Peso>
+        <Nombrecategoria>smartwatches</Nombrecategoria>
+        <NombreMarca>Dell</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>47</ProductoId>
+        <Nombre>Mini Drone Nano</Nombre>
+        <FechaAgregado>2022-08-11</FechaAgregado>
+        <Dimensiones>12x6x4</Dimensiones>
+        <Peso>4116.68</Peso>
+        <Nombrecategoria>laptops</Nombrecategoria>
+        <NombreMarca>Microsoft</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>48</ProductoId>
+        <Nombre>VR Headset Xperience</Nombre>
+        <FechaAgregado>2022-06-12</FechaAgregado>
+        <Dimensiones>10x5x3</Dimensiones>
+        <Peso>3947.98</Peso>
+        <Nombrecategoria>smartwatches</Nombrecategoria>
+        <NombreMarca>Sony</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>49</ProductoId>
+        <Nombre>Action Camera Adventure</Nombre>
+        <FechaAgregado>2022-05-15</FechaAgregado>
+        <Dimensiones>12x6x4</Dimensiones>
+        <Peso>167.02</Peso>
+        <Nombrecategoria>headphones</Nombrecategoria>
+        <NombreMarca>Apple</NombreMarca>
+    </DimensionProducto>
+    <DimensionProducto>
+        <ProductoId>50</ProductoId>
+        <Nombre>Wireless Keyboard Slim</Nombre>
+        <FechaAgregado>2021-03-01</FechaAgregado>
+        <Dimensiones>20x10x5</Dimensiones>
+        <Peso>2292.57</Peso>
+        <Nombrecategoria>smartwatches</Nombrecategoria>
+        <NombreMarca>Samsung</NombreMarca>
     </DimensionProducto>
 </Producto>
