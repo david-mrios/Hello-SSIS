@@ -12,7 +12,7 @@
               <xs:element minOccurs="0" name="AreaEnvioId" type="xs:decimal" />
               <xs:element minOccurs="0" name="ClienteId" type="xs:decimal" />
               <xs:element minOccurs="0" name="ProductoId" type="xs:decimal" />
-              <xs:element minOccurs="0" name="DATAKEY" type="xs:decimal" />
+              <xs:element minOccurs="0" name="DATEKEY" type="xs:decimal" />
               <xs:element minOccurs="0" name="UbicacionId" type="xs:decimal" />
               <xs:element minOccurs="0" name="EmpresaEnvio" type="xs:string" />
               <xs:element minOccurs="0" name="MetodoEnvio" type="xs:string" />
